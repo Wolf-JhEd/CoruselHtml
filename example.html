@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+                <h1>Formulario</h1>
+                <form action="formulario.html" method="post">
+                
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                   <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" name="nombre" class="form-control" id="nombre">
+                                   </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                               <div class="form-group">
+                                    <label for="apellido">Apellidos</label>
+                                <input  type="text" name="apellido" class="form-control" id="apellido">
+                               </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="sexo">Sexo</label>
+                                <select name="sexo" id="sexo" class="form-control">
+                                    <option value="N">Prefiero no especificar</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="fn">Fecha de nacimiento</label>
+                                <input type="date" name="fn" id="fn" class="form-control">
+                            </div>
+                        </div>
+                       </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                    <label for="tel">Telefono</label>
+                                    <input type="text" id="tel" name="tel" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                               <div class="form-group">
+                                    <label for="correo">Correo</label>
+                                     <input type="email" required id="correo" name="correo" class="form-control"> 
+                               </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                               <div class="form-group">
+                                    <label for="direc">Dirección</label>
+                                <input type="text" id="direc" name="direc" class="form-control">
+                                <small class="form-text text-muted">Escriba su dirección completa incluyendo el distrito.</small>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                        <label for="metodo">Motivo</label>
+                                        <select name="metodo" id="metodo" class="form-control" multiple>
+                                            <option value="C">Consultar</option>
+                                            <option value="R">Reclamo</option>
+                                            <option value="Q">Queja</option>
+                                            <option value="S">Sugerencia</option>
+                                        </select>
+                                </div>
+                                      
+                                </div>
+                            </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                                <div class="form-group">
+                                        <label for="msj">Mensaje</label>
+                                        <textarea name="msj" id="msj" cols="30" rows="10" class="form-control"></textarea>
+                                </div>
+                        </div>
+                    </div>
+                          
+                    
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar formulario</button>
+                        <a href="corusel.html" class="btn btn-secondary">Cancelar formulario</a>
+                        
+                    </div>
+                 </div>
+
+                </form>
+        </div>
+</body>
+</html>
